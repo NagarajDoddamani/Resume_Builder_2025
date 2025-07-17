@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="headTab">
+            <nav>
+                <a href="index.html"><img id="LogoImg" src="assets/ResumeBuilderLogo.ico" alt="Resume Builder"></a>
+                <a href="index.html"><h1>Build Your Resume For Free</h1></a>
+                <a href="inputForm.html">
+                    <input type="button" id="Button" value="Build Your Resume">
+                </a>
+            </nav>
+        </div>
+        <div class="links">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="ResumeTemplates.html">Resume Template</a>
+                <a href="#ContactUs">ContactUs</a>
+            </nav>
+        </div>
+    </header>
+
+    <h2 id="Options">Fill The Form</h2>
+    <div class="center">
+        <div class="contactInfo">
+            <h2>Contact Info</h2>
+            Name :
+            <input type="text" id="name" placeholder="Enter Your Name Here..." required><br><br>
+            mobile Number :
+            <input type="number" inputmode="numeric" id="mobile" placeholder="Your Mobile No Here..." ><br><br>
+            Email ID :
+            <input type="email" id="email" placeholder="Your Email ID Here..." required><br><br>
+            Home Address (Optional):
+            <input type="text" id="homeA" placeholder="Your Home Address Here..."><br><br>
+            City :
+            <input type="text" id="City" placeholder="Your City Here..."><br><br>
+            State :
+            <input type="text" id="State" placeholder="Your State Here..." required><br><br>    
+        </div>
+
+        <div class="Social_Links">
+            <h2>Social Links</h2>
+            Linkedin :
+            <input type="text" id="Linkedin" placeholder="Your Linkedin Here..."><br><br>
+            Portfolio :
+            <input type="text" id="Portfolio" placeholder="Your Portfolio Here..."><br><br>
+            GitHub :
+            <input type="text" id="GitHub" placeholder="Your GitHub Here..."><br><br>
+            Profile Photo :
+            <input type="file" id="profilePhoto" accept="image/*"><br><br>
+        </div>
+        <div class="ProfationalInfo">
+            <h2>Profational Info</h2>
+            Education Details :
+            <input type="text" id="education" placeholder="Your Education Here..." required><br><br>
+            Skills :
+            <input type="text" id="skills" placeholder="Your Skills Here..." required><br><br>
+            Languages Known :
+            <input type="text" id="language" placeholder="Your Known Languages Here..." required><br><br>
+            Interests :
+            <input type="text" id="intrests" placeholder="Your Interests Here..."><br><br>
+            Co-Curricular :
+            <input type="text" id="co-curricular" placeholder="Your Co-Curricular Activities Here..."><br><br>
+            Courses And Certifications :
+            <input type="text" id="certifications" placeholder="Your Courses And Certifications" required><br><br>
+        </div>
+    </div>
+
+    <div class="inputButton">
+        <button id="Button" onclick="SaveTheInput()">Save The Info</button>
+        <a href="ResumeTemplates.html">
+            <input type="submit" id="GreenButton" value="Select Resume Template">
+        </a>
+        <!-- <input type="reset" id="RedButton" value="Clear Info"><br> -->
+    </div>
+
+    <footer>
+        <div class="foot">
+            <p>Designed and Developed By <span id="foots">@Nagaraj_Creations_</span> 2025</p>
+        </div>
+    </footer>
+    <script src="ManageInputForm.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

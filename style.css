@@ -1,0 +1,394 @@
+body{
+    background-color: rgb(152, 248, 211);
+}
+#main_head{
+    background: rgb(38, 39, 38);
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    color: rgb(0, 215, 215);
+}
+#LogoImg{
+    height: 50px;
+}
+
+.ad_Resume{
+    height: 400px;
+}
+nav{
+    background: rgb(38, 39, 38);
+    text-align: center;
+    padding: 10px;
+}
+nav a{
+    color: rgb(165, 57, 231);
+    text-decoration: none;
+    padding: 10px;
+}
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.contactInfo,.ProfationalInfo,.Social_Links{
+    width: 200px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 600px;
+    max-height: 1000px;
+    background-color: rgb(0, 255, 255);
+    background-size: 0%;
+}
+#inputBox{
+    width: 300px;
+    border-radius: 3px;
+}
+
+#TemplateButton{
+    width: 220px;
+    height: 25px;
+    background-color: orange;
+    border: 5px;
+    border-radius: 3px;
+}
+#GreenButton{
+    display: block;
+    margin: 30px auto;
+    width: 250px;
+    height: 25px;
+    background-color: rgb(2, 221, 101);
+    border: 5px;
+    border-radius: 3px;
+}
+.inputButton{
+    display: block;
+    margin: 30px auto;
+    width: 200px;
+    background-color: rgb(152, 248, 211);
+    background-size: 0%;
+}
+#RedButton{
+    display: block;
+    margin: 30px auto;
+    width: 250px;
+    height: 25px;
+    background-color: rgb(231, 69, 37);
+    border: 5px;
+    border-radius: 3px;
+}
+#Button{
+    display: block;
+    margin: 20px auto;
+    width: 250px;
+    height: 25px;
+    text-decoration: none;
+    background-color: orange;
+    border: 5px;
+    border-radius: 3px;
+}
+#Button:hover{
+    background-color: rgb(207, 134, 0);
+}
+span{
+    color: red;
+}
+.info1{
+    text-align: center;
+}
+.info2img{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+nav{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+#ResumeTemplatesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+#Options{
+    background-color: rgb(152, 248, 211);
+    color: rgb(0, 62, 144);
+    text-align: center;
+}
+.card{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    width: 220px;
+    background-color: rgb(246, 150, 240);
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+#TempletImg{
+    width: 225px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+#foots{
+    color: rgb(0, 238, 255);
+}
+.foot{
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    color: aliceblue;
+    background-color: rgb(55, 54, 54);
+}
+
+.ResumeOutPut1, .ResumeOutPut2, .resume-container-3, .resume-4-dark, .resume-5-colorful {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+/* Resume Styleing  1 */
+#resumeOutPut{
+    page-break-inside: avoid;
+    width: 794px;
+    min-height: 1123px;
+    /* padding: 40px; */
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    position: relative;
+}
+.ResumeOutPut2{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px 40px;
+    background: #ffff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: "sagoe UI", sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+#Resume2Head{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: #004085;
+    margin-bottom: 20px;
+}
+.bar{
+    background: #004085;
+    height: 4px;
+    margin: 10px 0 30px 0;
+    border-radius: 2px;
+}
+
+.ResumeOutPut2 h3{
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 5px;
+    background: #f8f9fa;
+    border-left: 5px solid #004085;
+    border-radius: 4px;
+}
+
+/* Resume Style 2 */
+.ResumeOutPut2 {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+.ResumeOutPut2 h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #004085;
+}
+
+.ResumeOutPut2 .bar {
+  height: 3px;
+  background-color: #004085;
+  width: 100px;
+  margin: 10px auto 30px;
+}
+
+.ResumeOutPut2 img {
+  display: block;
+  margin: 0 auto 20px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #004085;
+}
+
+.ResumeOutPut2 h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.ResumeOutPut2 p {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.ResumeOutPut2 h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #004085;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+/* resume 3 Style */
+.resume-container-3 {
+  display: flex;
+  max-width: 900px;
+  margin: 30px auto;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.left-column {
+  width: 30%;
+  background-color: #004085;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.left-column img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid white;
+}
+
+.right-column {
+  width: 70%;
+  background-color: #fff;
+  padding: 30px;
+  color: #333;
+}
+
+.right-column h3 {
+  color: #004085;
+  margin-top: 20px;
+}
+
+/* resume 4 Style */
+.resume-4-dark {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #1e1e2f;
+  color: #f5f5f5;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.resume-4-dark img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+  border: 2px solid #f5f5f5;
+}
+
+.resume-4-dark h1 {
+  text-align: center;
+  color: #00d9ff;
+}
+
+.resume-4-dark h3 {
+  margin-top: 20px;
+  color: #00d9ff;
+}
+
+.resume-4-dark hr {
+  border: 1px solid #555;
+  margin: 20px 0;
+}
+
+/* resume 5 Style */
+.resume-5-colorful {
+  display: flex;
+  max-width: 900px;
+  margin: 40px auto;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.side-header {
+  width: 250px;
+  background-color: #ff6b6b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.side-header img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid white;
+}
+
+.main-info {
+  flex: 1;
+  background: #fff;
+  padding: 30px;
+  color: #333;
+}
+
+.main-info h3 {
+  color: #ff6b6b;
+  margin-top: 20px;
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  #resumeOutPut, #resumeOutPut *{
+      visibility: visible;
+  }
+  #resumeOutPut{
+      position: absolute;
+      left: 0;
+      top: 0;
+  }
+}
