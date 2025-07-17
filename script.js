@@ -71,24 +71,71 @@ function setResumeTemplateNum(TemplateNum){
 
 function SaveTheInput(){
   console.log("Resume Selected "+UserInfo.choice);
-  UserInfo.Name=document.getElementById("name").value;
-  UserInfo.Mobile=document.getElementById("mobile").value;
-  UserInfo.Email=document.getElementById("email").value;
-  UserInfo.Address=document.getElementById("homeA").value;
-  UserInfo.City=document.getElementById("City").value;
-  UserInfo.State=document.getElementById("State").value;
 
-  UserInfo.Linkedin=document.getElementById("Linkedin").value;
-  UserInfo.Portfolio=document.getElementById("Portfolio").value;
-  UserInfo.GitHub=document.getElementById("GitHub").value;
+  let SavedData=localStorage.getItem("ResumeData");
+  UserInfo=JSON.parse(SavedData);
 
-  UserInfo.Education=document.getElementById("education").value;
-  UserInfo.Skills=document.getElementById("skills").value;
-  UserInfo.Language=document.getElementById("language").value;
-  UserInfo.Intrests=document.getElementById("intrests").value;
-  UserInfo.Cocurricular=document.getElementById("co-curricular").value;
-  UserInfo.Certification=document.getElementById("certifications").value;
-
+  UserName=document.getElementById("name").value;
+  if(UserName){
+    UserInfo.Name=UserName;
+  }
+  UserMobile=document.getElementById("mobile").value;
+  if(UserMobile){
+    UserInfo.Mobile=UserMobile;
+  }
+  UserEmail=document.getElementById("email").value;
+  if(UserEmail){
+    UserInfo.Email=UserEmail;
+  }
+  UserAddress=document.getElementById("homeA").value;
+  if(UserAddress){
+    UserInfo.Address=UserAddress;
+  }
+  UserCity=document.getElementById("City").value;
+  if(UserCity){
+    UserInfo.City=UserCity;
+  }
+  UserState=document.getElementById("State").value;
+  if(UserState){
+    UserInfo.State=UserState;
+  }
+  UserLinkedin=document.getElementById("Linkedin").value;
+  if(UserLinkedin){
+    UserInfo.Linkedin=UserLinkedin;
+  }
+  UserPortfolio=document.getElementById("Portfolio").value;
+  if(UserPortfolio){
+    UserInfo.Portfolio=UserPortfolio;
+  }
+  UserGitHub=document.getElementById("GitHub").value;
+  if(UserGitHub){
+    UserInfo.GitHub=UserGitHub;
+  }
+  UserEducation=document.getElementById("education").value;
+  if(UserEducation){
+    UserInfo.Education=UserEducation;
+  }
+  UserSkills=document.getElementById("skills").value;
+  if(UserSkills){
+    UserInfo.Skills=UserSkills;
+  }
+  UserLanguage=document.getElementById("language").value;
+  if(UserLanguage){
+    UserInfo.Language=UserLanguage;
+  }
+  UserIntrests=document.getElementById("intrests").value;
+  if(UserIntrests){
+    UserInfo.Intrests=UserIntrests;
+  }
+  UserCocurricular=document.getElementById("co-curricular").value;
+  if(UserCocurricular){
+    UserInfo.Cocurricular=UserCocurricular;
+  }
+  UserCertification=document.getElementById("certifications").value;
+  if(UserCertification){
+    UserInfo.Certification=UserCertification;
+  }
+  
   const fileInput = document.getElementById("profilePhoto");
   const file = fileInput.files[0];
 
@@ -106,7 +153,6 @@ function SaveTheInput(){
     alert("Info Saved");
   }
 
-  
   localStorage.setItem("ResumeData",JSON.stringify(UserInfo));
   alert("Info Saved");
 }
@@ -195,6 +241,11 @@ function show_downlode_And_Change_Temp_Button(){
   let buttonShow = document.getElementById("downlode_and_Change_Temp_Button");
 
   buttonShow.innerHTML = `
+                  <h4><span>If You Want to change The info<br>You can only Change specific input only</span></h4>
+                  <a href="inputForm.html">
+                    <button id="Button">Change User Data</button>
+                  </a>
+                  <h4><span>You can also change the Resume Template</span></h4>
                   <a href="ResumeTemplates.html">
                     <button id="Button">Change Resume Template</button>
                   </a>
@@ -233,7 +284,7 @@ function resume2Out() {
 
   resume.innerHTML = `
     <div class="ResumeOutPut2">
-      ${UserInfo.Photo ? `<img src="${UserInfo.Photo}" alt="Profile Photo">` : ""}
+      ${UserInfo.Photo ? `<img src="${UserInfo.Photo}" id="resumeImg"alt="Profile Photo">` : ""}
 
       <h2>${UserInfo.Name}</h2>
       <p><strong>Phone:</strong> 
