@@ -236,9 +236,8 @@ function resume2Out() {
       ${UserInfo.Photo ? `<img src="${UserInfo.Photo}" alt="Profile Photo">` : ""}
 
       <h2>${UserInfo.Name}</h2>
-
       <p><strong>Phone:</strong> 
-        <a href="tel:+91${UserInfo.Mobile}" target="_blank">${UserInfo.Mobile}</a>
+        <a href="tel:+91${UserInfo.Mobile}" target="_blank">+91${UserInfo.Mobile}</a>
       </p>
 
       <p><strong>Email:</strong> 
@@ -247,18 +246,21 @@ function resume2Out() {
 
       <p><strong>Address:</strong> ${UserInfo.Address}</p>
 
-      <p><strong>LinkedIn:</strong> 
-        <a href="${UserInfo.Linkedin}" target="_blank">${UserInfo.Linkedin}</a>
+      <p>
+        <strong>
+          <a href="${UserInfo.Linkedin}" target="_blank">- LinkedIn -</a>
+        </strong>
       </p>
-
-      <p><strong>GitHub:</strong> 
-        <a href="${UserInfo.GitHub}" target="_blank">${UserInfo.GitHub}</a>
+      <p>
+        <strong>
+          <a href="${UserInfo.GitHub}" target="_blank">- GitHub -</a>
+        </strong> 
       </p>
-
-      <p><strong>Portfolio:</strong> 
-        <a href="${UserInfo.Portfolio}" target="_blank">${UserInfo.Portfolio}</a>
+      <p>
+        <strong>
+          <a href="${UserInfo.Portfolio}" target="_blank">- Portfolio -</a>
+        </strong> 
       </p>
-
       <hr>
 
       <h3>Education</h3>
