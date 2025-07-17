@@ -236,13 +236,28 @@ function resume2Out() {
       ${UserInfo.Photo ? `<img src="${UserInfo.Photo}" alt="Profile Photo">` : ""}
 
       <h2>${UserInfo.Name}</h2>
-      <p><strong>Mobile :</strong> ${UserInfo.Mobile}</p>
-      <p><strong>Email :</strong> ${UserInfo.Email}</p>
-      <p><strong>Address :</strong> ${UserInfo.Address}</p>
-      <p><strong>Linkedin :</strong> ${UserInfo.Linkedin}</p>
-      <p><strong>GitHub :</strong> ${UserInfo.GitHub}</p>
-      <a href="${UserInfo.Portfolio}">Portfolio</a>
-      <p><strong>Portfolio :</strong> ${UserInfo.Portfolio}</p>
+
+      <p><strong>Phone:</strong> 
+        <a href="tel:+91${UserInfo.Mobile}" target="_blank">${UserInfo.Mobile}</a>
+      </p>
+
+      <p><strong>Email:</strong> 
+        <a href="mailto:${UserInfo.Email}" target="_blank">${UserInfo.Email}</a>
+      </p>
+
+      <p><strong>Address:</strong> ${UserInfo.Address}</p>
+
+      <p><strong>LinkedIn:</strong> 
+        <a href="${UserInfo.Linkedin}" target="_blank">${UserInfo.Linkedin}</a>
+      </p>
+
+      <p><strong>GitHub:</strong> 
+        <a href="${UserInfo.GitHub}" target="_blank">${UserInfo.GitHub}</a>
+      </p>
+
+      <p><strong>Portfolio:</strong> 
+        <a href="${UserInfo.Portfolio}" target="_blank">${UserInfo.Portfolio}</a>
+      </p>
 
       <hr>
 
@@ -277,8 +292,8 @@ function resume3Out()
       <div class="left-column">
         ${UserInfo.Photo ? `<img src="${UserInfo.Photo}" alt="Profile">` : ""}
         <h2>${UserInfo.Name}</h2>
-        <p><strong>Mobile:</strong><br>${UserInfo.Mobile}</p>
-        <p><strong>Email:</strong><br>${UserInfo.Email}</p>
+        <p><strong>Phone : </strong><a href="tel:+91${UserInfo.Mobile}" target="_blank">${UserInfo.Mobile}</a></p>
+        <p><strong>Email :</strong><a href="https://mail.google.com/mail/?view=cm&fs=1&to=${UserInfo.Email}" target="_blank">${UserInfo.Email}</a></p>
         <p><strong>Address:</strong><br>${UserInfo.Address}</p>
         <p><strong>Languages:</strong><br>${UserInfo.Language}</p>
         <p><strong>Interests:</strong><br>${UserInfo.Intrests}</p>
