@@ -1,26 +1,26 @@
 const Templates = [
   {
-    img: "assets/Templates/Resume1.webp",
+    img: "./assets/Templates/Resume1.webp",
     name: "Basic",
     ResumeNum: 1
   },
   {
-    img: "assets/Templates/Resume1.webp",
+    img: "./assets/Templates/Resume1.webp",
     name: "1-Column Resume",
     ResumeNum: 2
   },
   {
-    img: "assets/Templates/Resume1.webp",
+    img: "./assets/Templates/Resume1.webp",
     name: "Two-Column Professional Resume",
     ResumeNum: 3
   },
   {
-    img: "assets/Templates/Resume1.webp",
+    img: "./assets/Templates/Resume1.webp",
     name: "Modern Dark Mode Resume",
     ResumeNum: 4
   },
   {
-    img: "assets/Templates/Resume1.webp",
+    img: "./assets/Templates/Resume1.webp",
     name: "Colorful Side Header Resume",
     ResumeNum: 5
   }
