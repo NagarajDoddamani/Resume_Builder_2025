@@ -142,7 +142,7 @@ function ResumeOutPut(){
 
   if(!SavedData || SavedData === "undefined")
   {
-    let resume=document.getElementById("resumeOutPut");
+    let resume=document.getElementById("resumeOutPutNotSaved");
 
     resume.innerHTML = `<div>
         <a href="inputForm.html">
@@ -191,6 +191,17 @@ function displayResumeTemplates() {
   }
 }
 
+function show_downlode_And_Change_Temp_Button(){
+  let buttonShow = document.getElementById("downlode_and_Change_Temp_Button");
+
+  buttonShow.innerHTML = `
+                  <a href="ResumeTemplates.html">
+                    <button id="Button">Change Resume Template</button>
+                  </a>
+                  <button id="Button" onclick="downloadResumePDF()">Download Resume As PDF</button>
+    `
+}
+
 //The resume Output Part
 function resume1Out()
 {
@@ -214,6 +225,7 @@ function resume1Out()
             <h3 id="Resume1certification">Certifications : <br>${UserInfo.Certification}</h3>
         </div>
       `;
+  show_downlode_And_Change_Temp_Button();
 }
 
 function resume2Out() {
@@ -253,6 +265,7 @@ function resume2Out() {
       <p>${UserInfo.Certification}</p>
     </div>
   `;
+  show_downlode_And_Change_Temp_Button();
 }
 
 function resume3Out()
@@ -285,6 +298,7 @@ function resume3Out()
       </div>
     </div>
   `;
+  show_downlode_And_Change_Temp_Button();
 }
 
 function resume4Out() {
@@ -311,6 +325,7 @@ function resume4Out() {
       <p>${UserInfo.Certification}</p>
     </div>
   `;
+  show_downlode_And_Change_Temp_Button();
 }
 
 function resume5Out() {
@@ -340,6 +355,7 @@ function resume5Out() {
       </div>
     </div>
   `;
+  show_downlode_And_Change_Temp_Button();
 }
 
 
@@ -366,6 +382,7 @@ function downloadResumePDF(){
   html2pdf().set(opt).from(resumeElement).save().then(()=>{
     console.log("PDF Saved Successfully....");
   });
+  show_downlode_And_Change_Temp_Button();
 }
 
 // Load correct function based on page
